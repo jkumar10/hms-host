@@ -1,0 +1,43 @@
+@charset "ISO-8859-1";
+#tables {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    left: 0px;
+    padding-top: 100px;
+	right: 500px;
+   
+  
+}
+
+#tables td, #table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tables tr:nth-child(even){background-color: #f2f2f2;}
+
+/*#tables tr:hover {background-color: #ddd;}*/
+
+#tables th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #3399ff;
+    color: white;
+    padding-left: 40px
+}
+
+/*.tableposition
+{
+	padding-top: 120px;
+	padding-left: 0px;
+}*/
+
+#AppointmentTable {
+	padding-down: 80px;
+	padding-left: 0px;
+	padding-right: 400px;
+	width: 100%;
+	
+}

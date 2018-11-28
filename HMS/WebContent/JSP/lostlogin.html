@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="../style/fontawesome-all.min.css" />
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/css/mdb.min.css" rel="stylesheet">
+    <!-- Changes to mdbootstrap -->
+    <link href="../style/mdbootstrap_rework.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style/main_new.css">
+</head>
+<body>
+
+ <!-- navbar -->  
+	<nav class="navbar navbar-expand-lg fixed-top ">  
+		<a class="navbar-brand" href="visitorHome.html">Home</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-4">
+				<li class="nav-item">
+				     <a class="nav-link" data-value="about" href="visitorAbout.html">About</a>
+				</li>  
+				<li class="nav-item"> 
+				 <a class="nav-link " data-value="hospitals" href="hospitals.html">Hospitals</a>
+				</li>
+				<li class="nav-item"> 
+				 <a class="nav-link " data-value="signin" href="loginForm.html">Sign In</a>
+				</li> 
+			</ul> 
+		</div>
+	</nav>
+    <main>
+    <div class="vertical-center">
+        <!-- main display -->
+        <div class="container">
+            <!-- Account Selector Area -->
+            <div class="row">
+               <div class="col-3"></div> 
+               <div class="col-6">
+						<form class="md-form" action="lostloginUpdate.jsp" method="post">
+							<h1 class="text-center">Lost Login</h1>
+							<div style="margin-bottom: 1em;" id="account-selector"></div>
+				  			<input id="accountTypeInput" type="text" style="display:none;" required />
+                     <input type="text" class="form-control" id="emailInput"  placeholder="Email Address" required />
+				  			<input type="submit" value="Send email" class="btn-sm btn-primary btn-block" style="width: 100%;" />
+		    			</form>
+                </div>
+                <div class="col-3"></div>
+            </div>
+            </div>
+        </div>    
+        <!-- /main display -->
+    </div>
+    </main>
+
+    <!-- JAVASCRIPT -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.13/js/mdb.min.js"></script>
+
+    <!-- Load React. and Babel transpiler for jsx -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
+    <!-- Load my React component. -->
+    <script type="text/babel" src="../js/react_components/account-selector.js"></script>
+    <script type="text/babel" src="../js/react_components/registration-form.js"></script>
+
+    <!-- script specific to this page -->
+    <script type="text/babel">
+        //Load in the account- selector
+        var accountSelectorTargets = document.querySelectorAll("#account-selector");
+        accountSelectorTargets.forEach(element => {
+            ReactDOM.render(
+                <AccountSelector onAccountSelected={(type) => (document.getElementById("accountTypeInput").value = type)} />,
+                element
+            );
+        });
+    </script>
+    
+    
+     <!-- Footer -->
+		<footer class="page-footer font-small blue pt-4" style="color: #fff; background-color: #1E88E5;">
+
+		    <!-- Footer Links -->
+		    <div class="container-fluid text-center text-md-left">
+
+		      <!-- Grid row -->
+		      <div class="row">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mt-md-0 mt-3">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase">Contact Us</h5>
+		          <p>115 N. Smith Rd.</p>
+		          <p>Bloomington, Indiana,</p>
+		          <p>47408</p>
+
+		        </div>
+		        <!-- Grid column -->
+
+		        <hr class="clearfix w-100 d-md-none pb-3">
+
+		        <!-- Grid column -->
+		        <div class="col-md-3 mb-md-0 mb-3">
+
+		            <!-- Links -->
+		            <h5 class="text-uppercase">Browse</h5>
+
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="visitorHome.html" style="color:#fff">Home</a>
+		              </li>
+		              <li>
+		                <a href="visitorAbout.html" style="color:#fff">About Us</a>
+		              </li>
+		             
+		            </ul>
+
+		          </div>
+		          <!-- Grid column -->
+
+		          <!-- Grid column -->
+		          <div class="col-md-3 mb-md-0 mb-3">
+
+		            <!-- Links -->
+		            <h5 class="text-uppercase">Register for free</h5>
+
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="loginForm.html" class="btn btn-danger btn-rounded">Sign up!</a>
+		              </li>
+
+		              
+		            </ul>
+
+		          </div>
+		          <!-- Grid column -->
+
+		      </div>
+		      <!-- Grid row -->
+
+		    </div>
+		    <!-- Footer Links -->
+
+		    <!-- Copyright -->
+		    <div class="footer-copyright text-center py-3"><p>Only for educational purpose. All images are Copyright © 2018 The Pet Hospitals</p>
+		     <!-- <a href="https://mdbootstrap.com/education/bootstrap/" style="color:#fff"> Vetpet.com</a>-->
+		    </div>
+		    <!-- Copyright -->
+
+		  </footer>
+		  <!-- Footer -->
+
+
+
+<!-- add Javasscript file from js file -->
+<script type="text/javascript" src="../js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/bootstrap.min.js"></script>
+<script type="text/javascript" src='../js/main.js'></script>
+</body>
+</html>

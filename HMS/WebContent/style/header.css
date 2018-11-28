@@ -1,0 +1,21 @@
+@charset "ISO-8859-1";
+/* Style the body */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 8px;
+  text-align: center;
+  background: #A9A9A9;
+  color: black;
+  font-size: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0px;
+}
+
+/* Page Content */
+.content {padding:1px;}

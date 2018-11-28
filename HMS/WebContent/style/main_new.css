@@ -1,0 +1,205 @@
+.navbar{
+ background:#3399ff;
+ box-shadow: 0px 3px 5px grey;
+}
+
+.nav-link , .navbar-brand{ 
+	color: #f4f4f4; cursor: pointer;
+}
+
+.nav-link{ 
+	margin-right: 1em !important;
+}
+
+.nav-link:hover{ 
+	background: #f4f4f4; color: #3399ff; 
+}
+
+.navbar-collapse{ 
+	justify-content: flex-end;
+}
+
+.navbar-toggler{
+  background:#fff !important;
+}
+
+.bg-dark{
+background-color:#343a40!important
+}
+
+.header{
+ background-image: url("vet.jpg");
+ background-attachment: fixed;
+ background-size: cover;
+ background-position: center;
+}
+
+.overlay{
+ position: absolute;
+ min-height: 100%;
+ min-width: 100%;
+ left: 0;
+ top: 0;
+ background: rgba(244, 244, 244, 0.79);
+
+}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+}
+.description h1{
+ color:#3399ff ;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:1px  solid #3399ff;
+ background:#3399ff;
+ color:#fff;
+}
+
+/*blog style*/
+
+.services{
+	margin: 4em 0;
+	position: relative;	
+}
+.services h1{
+	color:#3399ff;
+	margin: 2em;	
+}
+.services .card{
+	box-shadow: 0 0 20px #ccc;
+}
+.services .card img{
+	width: 100%;
+	height: 12em;
+}
+@media and (max-width: 768px){
+ .team .item img{
+ 	width: 100%;
+ }	
+}
+.services .card-title{
+	color:#3399ff;
+	 
+}
+.services .card-body{
+	padding: 1em;
+}
+
+
+.slider{
+
+    overflow: hidden;
+    height:600px;
+    padding-top:55px;
+}
+
+.slider figure div{
+    width:20%;
+    float:left;
+} 
+
+.slider figure p{
+    z-index: 10000;
+    font-size: 50px;
+    text-align: center;
+    position: absolute;
+    width:20%;
+    color: white;
+    font-family: '-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol"';
+    padding-top: 400px;
+    padding-right:1050px;
+}
+
+.slider figure img{
+    width:100%;
+    float:left;
+}
+
+.slider figure{
+    position: relative;
+    width:500%;
+    margin:0;
+    left:0;
+    animation: 40s slidy infinite;
+}
+
+@keyframes slidy{
+    0%{
+        left:0%;
+    }
+
+    10%{
+        left:0%;
+    }
+
+    12%{
+        left:-100%;
+    }
+
+    22%{
+        left:-100%;
+    }
+
+    24%{
+        left:-200%;
+    }
+
+    34%{
+        left:-200%;
+    }
+
+    36%{
+        left:-300%;
+    }
+
+    46%{
+        left:-300%;
+    }
+
+    48%{
+        left:-400%;
+    }
+
+    58%{
+        left:-400%;
+    }
+
+    60%{
+        left:-300%;
+    }
+
+    70%{
+        left:-300%;
+    }
+
+    72%{
+        left:-200%;
+    }
+
+    82%{
+        left:-200%;
+    }
+
+    84%{
+        left:-100%;
+    }
+
+    94%{
+        left:-100%;
+    }
+
+    96%{
+        left:0%;
+    }
+
+}

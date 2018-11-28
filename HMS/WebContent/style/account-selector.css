@@ -1,0 +1,26 @@
+.account-selector {
+    width: 100%; /* width:100% so it is the same size as a block element */
+    margin: auto;
+}
+
+.account-selector div {
+    width: 33.3333%;
+    height: 110px;
+    padding: 15px 0;
+    text-align: center;
+    float: left; 
+}
+
+.account-selector div i {
+    font-size: 48px;
+}
+
+.account-selector::after {
+    clear: both;
+}
+
+/* use same class for hover and selection ... */
+.account-selector div:hover {
+    background-color: #383737;
+    color: #FFF;
+}

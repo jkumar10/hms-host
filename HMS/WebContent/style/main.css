@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box; /*Makes border count as part of width*/
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+	  background-image: url("../pics/homeback5.jpg");
+  height: 1050px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow:hidden;
+  max-height: 100%;
+    
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
+.center-block-element {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*wraps outer form and horizontally/vertically centers it*/
+.account-form {
+    margin: 0 auto; /*horizontal centering*/
+    width: 360px;
+    background: #ffffff;
+    border: 1px solid #c4c4c4;
+}
+
+.account-form .login-title {
+    line-height: 30px;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    background-color: #F7F7f7;
+    color: #ADADAD;
+    padding: 5px 0 10px 0;
+}
+
+.account-form input {
+    display: block;
+    margin: 0 auto 10px;
+    padding-left: 4px;
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    border: none;
+    background-color: #595a5b;
+    border-color: #1E90FF;
+    color: #fff;
+    border-radius: 5px;
+    outline:0;
+}
+
+.account-form input::placeholder {
+    color: #fff;
+}
+
+.account-form input[type=button] {
+    cursor: pointer;
+}
+
+
+.account-form .lost-login {
+    text-align: center;
+}
+
+.account-form .lost-login a {
+        color:#666;
+        text-decoration:none;
+        font-size:13px;
+}
+
+.page {
+    display: none;
+}
+
+.active-page {
+    display: block;
+}
+
+#account-selector .page-view .next-button, #account-selector  .page-view .prev-button {
+    margin-top: 5px;
+}
+
+.icon, .non-selectable { /*Makes it so the icon can't be dragged over to select */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+}

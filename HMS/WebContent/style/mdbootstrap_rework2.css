@@ -1,0 +1,28 @@
+/* Fixs labels snapping to upper-left corner randomly */
+.md-form label {
+    position: absolute;
+}
+
+.md-form .form-group {
+    position: relative; /*Makes it so absolute positioned label will snap to this*/
+}
+
+
+
+table.table td {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+table.table tr.active {
+    background-color: #bbb; /*Slightly darker than striped table*/
+}
+
+label {
+    width: 100%;
+}
+
+.md-form input[type=password].form-control.invalid+label:after, .md-form input[type=password].form-control:focus.invalid+label:after, .md-form input[type=text].form-control.invalid+label:after, .md-form input[type=text].form-control:focus.invalid+label:after{
+    font-size: .8rem;
+    top: 1.8rem;
+}

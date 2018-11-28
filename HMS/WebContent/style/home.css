@@ -1,0 +1,130 @@
+@charset "ISO-8859-1";
+body {
+    font-family: "Lato", sans-serif;
+    letter-spacing: 2px;
+    background-image: url("../pics/homepageback.jpg");
+    min-height: 800px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    width: 100%;
+
+}
+h1 {
+    color: white;
+}
+
+.sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 17px 17px 17px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+div.middle {
+      position: relative;
+      left: 400px;
+      line-height: 1.8;
+      }
+div.table {
+      position: relative;
+      left: 400px;
+      line-height: 1.8;
+      }
+
+.row1{
+  background-color: #bbb;
+  padding-left: 225px;
+  margin-top: 500px;
+  width: 90%;
+  position: relative;
+  display: table;
+
+}   
+
+.r1col1{
+  border-bottom: 10px #000;
+  letter-spacing: 2px;
+  justify-content: center;
+}
+
+.r1col2{
+  border-bottom: 10px #000;
+  letter-spacing: 2px;
+}
+
+.inner-row{
+
+  padding:20px 30px;
+}
+
+.img2{
+  background-image: url("../pics/img2.JPG");
+  width: 100%;
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  /*background-position: center; */
+  right: 20px;
+  left: 20px;
+}
+
+.img3{
+  background-image: url("../pics/img3.jpg");
+  min-height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  opacity: 0.6;
+}
+
+.row2{
+  background-color: #bbb;
+  padding-left: 250px;
+  width: 90%;
+  position: relative;
+}   
+
+
+      
+.icon, .non-selectable { /*Makes it so the icon can't be dragged over to select */
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;          /* Likely future */ 
+}

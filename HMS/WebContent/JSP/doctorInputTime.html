@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../style/main_new.css">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #1E88E5;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2B60DE;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 80px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+    padding-bottom: 250px;
+}
+
+.rightside {
+float:right;
+margin-right: 80px;
+margin-top: 80px;
+}
+
+.rightside {
+float:right;
+margin-right: 80px;
+margin-top: 80px;
+}
+</style>
+</head>
+<body>
+<!-- navbar -->  
+  
+	<nav class="navbar navbar-expand-lg fixed-top ">  
+		<a class="navbar-brand" href="doctorHome.jsp"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">  
+		<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse " id="navbarSupportedContent">
+			<ul class="navbar-nav mr-4">
+				<li class="nav-item">
+				     <a class="nav-link" data-value="about" href="doctorHome.jsp">Home</a>
+				</li>  
+				  
+				<li class="nav-item">  
+				<li class="nav-item"> 
+				    <a class="nav-link " data-value="providers" href="doctorInputTime.html">Schedule</a>
+				</li> 
+				   <a class="nav-link " data-value="team" href="doctorAppointments.html">My Appointments</a>
+				</li>   
+				<li class="nav-item">  
+				   <a class="nav-link " data-value="team" href="logout.jsp">Sign out</a>
+				</li> 
+			</ul> 
+		</div>
+	</nav>
+
+<div class="rightside">
+<img src="../docpics/doctime.jpg" alt="Snow" height="620" width="440">
+</div>
+
+<div class="container">
+	<h1>Enter your available times</h1><br><br>
+  <form action="doctorInputUpdate.jsp">
+    <label for="date">Select Date</label>
+	<input id="DateInput" type="date" name="date"><br><br>
+
+    <label for="stime">Enter your shift start time.</label>
+    <input type="time" name="stime"><br><br>
+
+	<label for="ftime">Enter your shift end time.</label>
+    <input type="time" name="ftime"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</div>
+<!-- Footer -->
+		<footer class="page-footer font-small blue pt-4" style="color: #fff; background-color: #1E88E5;">
+
+		    <!-- Footer Links -->
+		    <div class="container-fluid text-center text-md-left">
+
+		      <!-- Grid row -->
+		      <div class="row">
+
+		        <!-- Grid column -->
+		        <div class="col-md-6 mt-md-0 mt-3">
+
+		          <!-- Content -->
+		          <h5 class="text-uppercase">Contact Us</h5>
+		          <p>115 N. Smith Rd.</p>
+		          <p>Bloomington, Indiana,</p>
+		          <p>47408</p>
+
+		        </div>
+		        <!-- Grid column -->
+
+		        <hr class="clearfix w-100 d-md-none pb-3">
+
+		        <!-- Grid column -->
+		        <div class="col-md-3 mb-md-0 mb-3">
+
+		            <!-- Links -->
+		            <h5 class="text-uppercase">Browse</h5>
+
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="visitorHome.html" style="color:#fff">Home</a>
+		              </li>
+		              <li>
+		                <a href="visitorAbout.html" style="color:#fff">About Us</a>
+		              </li>
+		             
+		            </ul>
+
+		          </div>
+		          <!-- Grid column -->
+
+		          <!-- Grid column -->
+		          <div class="col-md-3 mb-md-0 mb-3">
+
+		            <!-- Links -->
+		            <h5 class="text-uppercase">Register for free</h5>
+
+		            <ul class="list-unstyled">
+		              <li>
+		                <a href="loginForm.html" class="btn btn-danger btn-rounded">Sign up!</a>
+		              </li>
+
+		              
+		            </ul>
+
+		          </div>
+		          <!-- Grid column -->
+
+		      </div>
+		      <!-- Grid row -->
+
+		    </div>
+		    <!-- Footer Links -->
+
+		    <!-- Copyright -->
+		    <div class="footer-copyright text-center py-3"><p>Only for educational purpose. All images are Copyright © 2018 The Pet Hospitals</p>
+		     <!-- <a href="https://mdbootstrap.com/education/bootstrap/" style="color:#fff"> Vetpet.com</a>-->
+		    </div>
+		    <!-- Copyright -->
+
+		  </footer>
+		  <!-- Footer -->
+
+
+
+<!-- add Javasscript file from js file -->
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src='js/main.js'></script>
+
+</body>
+</html>

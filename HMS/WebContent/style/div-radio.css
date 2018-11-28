@@ -1,0 +1,7 @@
+.radio.selected {
+    background-color: #595a5b;
+}
+
+input.radio-input {
+    display: none;
+}
